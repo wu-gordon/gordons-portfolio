@@ -1,0 +1,430 @@
+.cs-hero,
+.cs-banner,
+.cs-block,
+.cs-footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-hero,
+.cs-discovery,
+.cs-growth {
+  background: var(--bg-2);
+}
+
+.cs-hero {
+  height: 467px;
+}
+
+.cs-date {
+  position: absolute;
+  left: 223px;
+  top: 156px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.cs-title {
+  position: absolute;
+  left: 223px;
+  top: 198px;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cs-lede {
+  position: absolute;
+  left: 223px;
+  top: 306px;
+  margin: 0;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cs-meta {
+  position: absolute;
+  left: 973px;
+  top: 182px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+}
+
+.cs-meta p {
+  margin: 0;
+}
+
+.cs-meta a,
+.cs-copy a {
+  color: var(--text-link);
+}
+
+.cs-banner {
+  height: 686px;
+}
+
+.cs-banner img {
+  width: 1440px;
+  height: 686px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cs-block h2,
+.cs-kicker,
+.cs-copy,
+.cs-audit,
+.compare,
+.cs-figma,
+.cs-takeaway {
+  position: absolute;
+  left: 223px;
+}
+
+.cs-kicker {
+  top: 60px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cs-block h2 {
+  top: 102px;
+  margin: 0;
+  width: 994px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.cs-copy {
+  top: 173px;
+  width: 993px;
+  font-size: 20px;
+}
+
+.cs-copy p {
+  margin: 0 0 20px;
+  line-height: normal;
+}
+
+.cs-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.cs-slider-hint {
+  margin-top: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.cs-copy ol {
+  margin: 0;
+  padding-left: 30px;
+}
+
+.cs-copy li {
+  margin: 0;
+}
+
+.cs-challenge {
+  height: 467px;
+}
+
+.cs-discovery {
+  height: 1634px;
+}
+
+.cs-copy-tight {
+  top: 173px;
+}
+
+.cs-audit {
+  top: 285px;
+  width: 993px;
+  height: 464px;
+  object-fit: cover;
+}
+
+.cs-copy-mid {
+  top: 809px;
+}
+
+.cs-matrix {
+  position: absolute;
+  left: 223px;
+  top: 895px;
+  width: 993px;
+  height: 489px;
+}
+
+.cs-matrix-labels {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  margin: 0;
+  width: 241px;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  color: #fff;
+  font-size: 19px;
+  line-height: 20px;
+}
+
+.cs-matrix-line {
+  position: absolute;
+  left: 280px;
+  top: 0;
+  width: 713px;
+  height: 340px;
+}
+
+.cs-checks {
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 169px;
+}
+
+.cs-checks-graza {
+  left: 359px;
+}
+
+.cs-checks-bloom {
+  left: 545px;
+}
+
+.cs-checks-olipop {
+  left: 731px;
+}
+
+.cs-checks-nespresso {
+  left: 937px;
+  top: 99px;
+}
+
+.cs-logo {
+  position: absolute;
+  top: 371px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.cs-logo-graza {
+  left: 341px;
+}
+
+.cs-logo-bloom {
+  left: 524px;
+}
+
+.cs-logo-olipop {
+  left: 710px;
+}
+
+.cs-logo-nespresso {
+  left: 916px;
+}
+
+.cs-brand {
+  position: absolute;
+  top: 458px;
+  margin: 0;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+}
+
+.cs-brand-graza {
+  left: 341px;
+  width: 70px;
+}
+
+.cs-brand-bloom {
+  left: 524px;
+  width: 70px;
+}
+
+.cs-brand-olipop {
+  left: 710px;
+  width: 70px;
+}
+
+.cs-brand-nespresso {
+  left: 904px;
+  width: 94px;
+}
+
+.cs-copy-end {
+  top: 1444px;
+}
+
+.cs-direction {
+  height: 2867px;
+}
+
+.cs-direction .compare-home {
+  top: 441px;
+}
+
+.cs-copy-product {
+  top: 1123px;
+}
+
+.cs-direction .compare-product {
+  top: 1235px;
+}
+
+.cs-copy-nutrition {
+  top: 1917px;
+}
+
+.cs-direction .compare-nutrition {
+  top: 2185px;
+}
+
+.compare {
+  width: 994px;
+  height: 622px;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+  cursor: ew-resize;
+  background: #1a1a1a;
+}
+
+.compare-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 994px;
+  height: 622px;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.compare-before-clip {
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
+}
+
+.compare-handle {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 22px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.compare-bar {
+  width: 8px;
+  height: 100%;
+  background: #e5e9ea;
+}
+
+.compare-knob {
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 45px;
+  margin-top: -22px;
+  border-radius: 11px;
+  background: #5c6568;
+}
+
+.cs-growth {
+  height: 1129px;
+}
+
+.cs-pills,
+.cs-dropdown {
+  position: absolute;
+  top: 493px;
+  width: 465px;
+  height: 525px;
+  object-fit: fill;
+  background: #f6eee6;
+}
+
+.cs-pills {
+  left: 223px;
+}
+
+.cs-dropdown {
+  left: 748px;
+}
+
+.cs-tradeoff-arrow {
+  position: absolute;
+  left: 702px;
+  top: 770px;
+  width: 32px;
+  height: 2px;
+  background: var(--text);
+}
+
+.cs-tradeoff-arrow::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  border: 6px solid transparent;
+  border-left-color: var(--text);
+  border-right-width: 0;
+}
+
+.cs-caption {
+  position: absolute;
+  top: 1043px;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cs-caption-pills {
+  left: 399px;
+  width: 112px;
+}
+
+.cs-caption-dropdown {
+  left: 890px;
+  width: 184px;
+}
+
+.cs-journey {
+  height: 1357px;
+}
+
+.cs-figma {
+  top: 519px;
+  width: 993px;
+  height: 413px;
+  object-fit: cover;
+}
+
+.cs-block h2.cs-takeaway {
+  top: 992px;
+}
+
+.cs-copy-takeaway {
+  top: 1063px;
+}
+
+.cs-footer {
+  height: 186px;
+}
+
+.cs-footer .footer {
+  top: 60px;
+}

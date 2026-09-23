@@ -1,5 +1,6 @@
 import { type MouseEvent, type ReactNode, useEffect, useSyncExternalStore } from 'react'
 import About from './About'
+import Spredo from './Spredo'
 import { img } from './assets'
 import {
   EMAIL,
@@ -10,6 +11,7 @@ import {
   SiteFooter,
   SiteNav,
   SPOTIFY,
+  navigate,
 } from './ui'
 import './App.css'
 
@@ -50,7 +52,15 @@ function ProjectCard({
 
   if (href) {
     return (
-      <a className="project-card" href={href}>
+      <a
+        className="project-card"
+        href={href}
+        onClick={(event) => {
+          if (!href.startsWith('/')) return
+          event.preventDefault()
+          navigate(href)
+        }}
+      >
         {body}
       </a>
     )
@@ -210,6 +220,7 @@ function Home() {
           <img className="divider" src={img.divider} alt="" />
 
           <ProjectCard
+            href="/spredo"
             title="Spredo"
             tags={['UX DESIGN', 'WEB DESIGN', 'CLIENT PROJECT']}
             description={
@@ -343,6 +354,9 @@ function subscribe(onStoreChange: () => void) {
 
 export default function App() {
   const path = useSyncExternalStore(subscribe, () => window.location.pathname)
+  if (path.startsWith('/spredo')) {
+    return <Spredo />
+  }
   if (path.startsWith('/about')) {
     return <About />
   }

@@ -3,6 +3,7 @@ import { useEffect, useState, type CSSProperties, type MouseEvent, type ReactNod
 export const ARTBOARD_WIDTH = 1440
 export const HOME_HEIGHT = 892 + 2441 + 731
 export const ABOUT_HEIGHT = 844 + 626 + 480 + 1405 + 186
+export const SPREDO_HEIGHT = 467 + 686 + 467 + 1634 + 2867 + 1129 + 1357 + 186
 export const RESUME_URL =
   'https://docs.google.com/document/d/1E9r_5JN_HsRJ2gCAwDCRcvbuMScXxPX3K63CUAP4Vvk/edit?usp=sharing'
 export const EMAIL = 'mailto:gordonwu2000@gmail.com'
@@ -70,7 +71,7 @@ export function SiteNav({
   current,
   onProjectsClick,
 }: {
-  current: 'home' | 'about'
+  current: 'home' | 'about' | 'case'
   onProjectsClick?: (event: MouseEvent<HTMLAnchorElement>) => void
 }) {
   return (
@@ -136,5 +137,38 @@ export function SiteFooter({ className = '' }: { className?: string }) {
         </a>
       </div>
     </div>
+  )
+}
+
+export function BackToTop() {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const update = () => setVisible(window.scrollY > 400)
+    update()
+    window.addEventListener('scroll', update, { passive: true })
+    return () => window.removeEventListener('scroll', update)
+  }, [])
+
+  if (!visible) return null
+
+  return (
+    <button
+      type="button"
+      className="back-to-top"
+      aria-label="Back to top"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    >
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+        <path
+          d="M3.5 11.25 L9 5.25 L14.5 11.25"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
   )
 }
