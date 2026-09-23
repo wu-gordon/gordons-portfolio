@@ -1,0 +1,480 @@
+.about-hero,
+.about-lore,
+.about-cv,
+.about-beyond,
+.about-footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero {
+  height: 844px;
+}
+
+.hello-line {
+  position: absolute;
+  left: 83px;
+  top: 176px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.hello-h {
+  position: relative;
+  top: 4px;
+}
+
+.hello-rest,
+.lore-rest,
+.beyond-rest {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.gordon-name {
+  position: absolute;
+  left: 681px;
+  top: 309px;
+}
+
+.gordon-name p {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.gordon-strike {
+  position: absolute;
+  left: 0;
+  top: 31px;
+  width: 455.759px;
+  height: 65.538px;
+  transform: rotate(1.52deg);
+}
+
+.nickname {
+  position: absolute;
+  margin: 0;
+  color: var(--text-link);
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.nickname-gordog {
+  left: 676px;
+  top: 444px;
+  transform: rotate(1.29deg);
+}
+
+.nickname-gmoney {
+  left: 783px;
+  top: 558px;
+  transform: rotate(-2.15deg);
+}
+
+.nickname-gwu {
+  left: 702px;
+  top: 655px;
+  transform: rotate(1.29deg);
+}
+
+.selfie {
+  position: absolute;
+  left: 135px;
+  top: 328px;
+  width: 504px;
+  height: 469.489px;
+}
+
+.selfie-mouth {
+  position: absolute;
+  left: 50.7px;
+  top: 224.96px;
+  width: 21.382px;
+  height: 18.267px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selfie-mouth img {
+  transform: rotate(19.85deg);
+}
+
+.masked-photo {
+  position: absolute;
+  overflow: hidden;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+}
+
+.portrait-photo {
+  left: 82px;
+  top: 0;
+  width: 422px;
+  height: 469.489px;
+  z-index: 1;
+  clip-path: path(
+    'M212.557 2.22195C261.133 9.75718 292.038 54.2916 329.029 86.6658C362.053 115.568 402.488 139.122 416.5 180.711C430.582 222.507 414.386 266.315 404.001 309.179C392.648 356.035 390.538 410.097 353.459 440.91C315.738 472.255 261.593 467.338 212.557 468.267C162.512 469.215 108.372 475.53 67.7237 446.322C27.0022 417.062 5.9578 365.727 0.484895 315.882C-4.40343 271.362 29.0283 234.306 39.6674 190.8C51.6252 141.902 32.4788 83.0468 66.4972 45.9414C101.703 7.54143 161.077 -5.76374 212.557 2.22195Z'
+  );
+}
+
+.portrait-photo img {
+  position: absolute;
+  left: -2px;
+  top: -83px;
+  width: 425.5px;
+  height: 567.333px;
+  object-fit: cover;
+}
+
+.presenting {
+  position: absolute;
+  left: 1087.07px;
+  top: 446.95px;
+  width: 220px;
+  height: 330px;
+}
+
+.present-pointer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 82.076px;
+  height: 88.49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.present-pointer img {
+  transform: rotate(-3.77deg);
+}
+
+.about-lore {
+  height: 626px;
+}
+
+.lore-title {
+  position: absolute;
+  left: 83px;
+  top: 57px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.lore-t {
+  position: relative;
+  top: 5px;
+}
+
+.lore-copy {
+  position: absolute;
+  left: 83px;
+  top: 217px;
+  width: 672px;
+  font-size: 25px;
+  letter-spacing: -0.25px;
+}
+
+.lore-copy p {
+  margin: 0 0 35px;
+  line-height: 35px;
+}
+
+.lore-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.hackathon-photo {
+  left: 889px;
+  top: 35px;
+  width: 468px;
+  height: 556px;
+  clip-path: path(
+    'M227.908 16.1059C289.818 7.98855 363.941 -18.9935 410.525 22.6191C457.649 64.7137 428.927 143.022 439.717 205.31C448.433 255.63 471.278 301.205 467.603 352.142C462.97 416.363 466.593 493.543 416.05 533.375C365.499 573.213 291.595 550.196 227.908 541.043C172.863 533.131 107.134 530.053 75.3144 484.405C43.8836 439.315 90.3469 376.649 76.2701 323.506C63.5732 275.572 -0.146674 249.665 0.000253683 200.075C0.156529 147.33 36.0116 99.4571 77.032 66.3451C119.324 32.2069 174.037 23.1693 227.908 16.1059Z'
+  );
+}
+
+.hackathon-photo img {
+  position: absolute;
+  left: -331px;
+  top: -108px;
+  width: 1214px;
+  height: 871px;
+  object-fit: cover;
+}
+
+.smiski-work {
+  position: absolute;
+  left: 807px;
+  top: 249px;
+  width: 188px;
+  height: 301px;
+  z-index: 2;
+}
+
+.work-eye {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-eye-left {
+  left: 100.48px;
+  top: 88.08px;
+  width: 14.872px;
+  height: 14.698px;
+}
+
+.work-eye-left img {
+  transform: rotate(-54.3deg);
+}
+
+.work-eye-right {
+  left: 65.94px;
+  top: 88.72px;
+  width: 9.898px;
+  height: 11.084px;
+}
+
+.work-eye-right img {
+  transform: rotate(-31.28deg);
+}
+
+.about-cv {
+  height: 480px;
+  overflow: visible;
+  color: var(--text);
+}
+
+.cv-col {
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cv-experience {
+  left: 83px;
+  width: 567px;
+}
+
+.cv-awards {
+  left: 741px;
+  width: 611px;
+}
+
+.cv-col h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.cv-item p,
+.award-row p {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: -0.25px;
+  line-height: normal;
+}
+
+.cv-item p:first-child {
+  white-space: nowrap;
+}
+
+.cv-item p + p {
+  margin-top: 8px;
+}
+
+.cv-item strong,
+.award-row strong {
+  font-weight: 700;
+}
+
+.award-medium {
+  font-weight: 500;
+}
+
+.award-row {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 0 0;
+  align-items: start;
+}
+
+.award-year {
+  font-weight: 500;
+}
+
+.award-row div p + p {
+  margin-top: 8px;
+}
+
+.about-beyond {
+  height: 1405px;
+}
+
+.beyond-title {
+  position: absolute;
+  left: 83px;
+  top: 60px;
+  display: flex;
+  align-items: flex-start;
+  color: var(--text);
+}
+
+.beyond-b {
+  position: relative;
+  top: 5px;
+  width: 116px;
+}
+
+.beyond-rest {
+  display: block;
+}
+
+.smiski-nap {
+  position: absolute;
+  left: 880px;
+  top: 237px;
+  width: 408.074px;
+  height: 159px;
+  z-index: 3;
+}
+
+.life-photo {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--token-bg);
+}
+
+.life-photo img {
+  object-fit: cover;
+}
+
+.life-coffee {
+  left: 83px;
+  top: 362px;
+  width: 466px;
+  height: 418px;
+}
+
+.life-coffee img {
+  width: 466px;
+  height: 621.333px;
+  margin-top: -158px;
+}
+
+.life-festival {
+  left: 609px;
+  top: 362px;
+  width: 748px;
+  height: 418px;
+}
+
+.life-festival img {
+  width: 774px;
+  height: 1032px;
+  margin-left: -13px;
+  margin-top: -433px;
+}
+
+.life-friends {
+  left: 83px;
+  top: 863px;
+  width: 748px;
+  height: 418px;
+}
+
+.life-friends img {
+  width: 765px;
+  height: 453px;
+  margin-top: -35px;
+}
+
+.life-vending {
+  left: 891px;
+  top: 863px;
+  width: 466px;
+  height: 418px;
+}
+
+.life-vending img {
+  width: 465.904px;
+  height: 621.206px;
+  margin-top: -144px;
+}
+
+.smiski-sweater {
+  position: absolute;
+  left: 466px;
+  top: 569px;
+  width: 195.983px;
+  height: 305.714px;
+  z-index: 2;
+}
+
+.smiski-approve {
+  position: absolute;
+  left: 728px;
+  top: 966px;
+  width: 204px;
+  height: 352.049px;
+  z-index: 2;
+}
+
+.life-caption {
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.life-caption-tl {
+  left: 83px;
+  top: 800px;
+}
+
+.life-caption-tr {
+  right: 83px;
+  top: 800px;
+  text-align: right;
+}
+
+.life-caption-bl {
+  left: 83px;
+  top: 1301px;
+}
+
+.life-caption-br {
+  right: 83px;
+  top: 1301px;
+  text-align: right;
+}
+
+.about-footer {
+  height: 186px;
+}
+
+.about-footer .footer {
+  top: 60px;
+}

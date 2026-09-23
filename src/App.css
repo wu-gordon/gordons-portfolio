@@ -6,7 +6,6 @@
 
 .artboard {
   width: 1440px;
-  height: 4064px;
   transform-origin: top left;
   background: var(--bg);
   position: relative;
