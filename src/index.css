@@ -1,0 +1,45 @@
+:root {
+  --bg: #3e5148;
+  --text: #e5e9ea;
+  --text-2: #9eb4aa;
+  --text-nav: #e7e7e7;
+  --text-link: #d3eaeb;
+  --token-bg: #9eb4aa;
+  --token-text: #3e5148;
+  --spredo-desk: #ffe9d8;
+  --caterdash-desk: #ffe5e7;
+  --broomies-desk: #fff2ca;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-optical-sizing: auto;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+img {
+  max-width: none;
+  display: block;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
