@@ -1,4 +1,10 @@
-import { type MouseEvent, type ReactNode, useEffect, useSyncExternalStore } from 'react'
+import {
+  type MouseEvent,
+  type ReactNode,
+  useEffect,
+  useLayoutEffect,
+  useSyncExternalStore,
+} from 'react'
 import About from './About'
 import Spredo from './Spredo'
 import { img } from './assets'
@@ -11,6 +17,7 @@ import {
   SiteFooter,
   SiteNav,
   SPOTIFY,
+  jumpToTop,
   navigate,
 } from './ui'
 import './App.css'
@@ -354,6 +361,12 @@ function subscribe(onStoreChange: () => void) {
 
 export default function App() {
   const path = useSyncExternalStore(subscribe, () => window.location.pathname)
+
+  useLayoutEffect(() => {
+    if (window.location.hash) return
+    jumpToTop()
+  }, [path])
+
   if (path.startsWith('/spredo')) {
     return <Spredo />
   }

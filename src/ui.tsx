@@ -59,12 +59,18 @@ export function Artboard({ height, children }: { height: number; children: React
   )
 }
 
+export function jumpToTop() {
+  document.documentElement.scrollTop = 0
+  document.body.scrollTop = 0
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+}
+
 export function navigate(to: string) {
+  const stayScrolled = to.includes('#')
+  if (!stayScrolled) jumpToTop()
   window.history.pushState({}, '', to)
   window.dispatchEvent(new PopStateEvent('popstate'))
-  if (!to.includes('#')) {
-    window.scrollTo(0, 0)
-  }
+  if (!stayScrolled) jumpToTop()
 }
 
 export function SiteNav({
