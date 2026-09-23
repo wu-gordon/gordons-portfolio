@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Peristiwa';
+  src: url('/fonts/Peristiwa-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #3e5148;
   --text: #e5e9ea;
@@ -10,6 +18,7 @@
   --caterdash-desk: #ffe5e7;
   --broomies-desk: #fff2ca;
   --sans: 'DM Sans', system-ui, sans-serif;
+  --display: 'Peristiwa', cursive;
 }
 
 * {

@@ -52,9 +52,6 @@ import brush1 from './assets/figma/brush-1.svg'
 import brush2 from './assets/figma/brush-2.svg'
 import hand1 from './assets/figma/hand-1.svg'
 import hand2 from './assets/figma/hand-2.svg'
-import letterM from './assets/figma/letter-m.png'
-import letterP from './assets/figma/letter-p.png'
-import letterG from './assets/figma/letter-g.png'
 
 export const img = {
   imacSpredo,
@@ -111,7 +108,4 @@ export const img = {
   brush2,
   hand1,
   hand2,
-  letterM,
-  letterP,
-  letterG,
 }

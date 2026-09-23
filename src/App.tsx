@@ -130,15 +130,10 @@ function App() {
           </nav>
 
           <div className="hero-headline">
-            <img
-              className="letter-m"
-              src={img.letterM}
-              alt=""
-              width={148}
-              height={92}
-            />
             <p className="hero-line hero-line-1">
-              <span>ETICULOUS</span>
+              <span className="hero-word">
+                <span className="drop-cap">M</span>ETICULOUS
+              </span>
               <span>IN</span>
               <span>CRAFTING</span>
             </p>
@@ -218,8 +213,12 @@ function App() {
         <section id="projects" className="projects">
           <div className="projects-intro">
             <div className="projects-title">
-              <p className="projects-title-text">://&nbsp;&nbsp;&nbsp;&nbsp;ROJECTS</p>
-              <img className="letter-p" src={img.letterP} alt="" width={114} height={92} />
+              <p className="projects-title-text">
+                <span>://</span>
+                <span className="projects-word">
+                  <span className="drop-cap">P</span>ROJECTS
+                </span>
+              </p>
             </div>
             <p className="aside aside-left">
               THEY CALL ME
@@ -338,7 +337,7 @@ function App() {
 
         <footer className="footer-block">
           <div className="collection">
-            <img className="letter-g" src={img.letterG} alt="" width={99} height={107} />
+            <p className="letter-g drop-cap">G</p>
             <p className="collection-wu">WU</p>
             <p className="collection-design">DESIGN</p>
             <p className="collection-portfolio">PORTFOLIO</p>
