@@ -6,6 +6,8 @@ import {
   useSyncExternalStore,
 } from 'react'
 import About from './About'
+import Broomies from './Broomies'
+import CaterDash from './CaterDash'
 import Spredo from './Spredo'
 import { img } from './assets'
 import {
@@ -248,6 +250,7 @@ function Home() {
           <img className="divider" src={img.divider} alt="" />
 
           <ProjectCard
+            href="/caterdash"
             title="CaterDash"
             tags={['UX DESIGN', 'WEB DESIGN', 'CLIENT PROJECT']}
             description="Reimagining the ordering process for Canada’s leading restaurant catering marketplace with 45,000+ meals delivered (previously known as NNECT)."
@@ -273,6 +276,7 @@ function Home() {
           <img className="divider" src={img.divider} alt="" />
 
           <ProjectCard
+            href="/broomies"
             title="Broomies 🏅"
             tags={['UI/UX DESIGN', 'HACKATHON']}
             description={
@@ -369,6 +373,12 @@ export default function App() {
 
   if (path.startsWith('/spredo')) {
     return <Spredo />
+  }
+  if (path.startsWith('/caterdash')) {
+    return <CaterDash />
+  }
+  if (path.startsWith('/broomies')) {
+    return <Broomies />
   }
   if (path.startsWith('/about')) {
     return <About />
