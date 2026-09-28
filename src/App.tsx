@@ -5,6 +5,7 @@ import {
   useLayoutEffect,
   useSyncExternalStore,
 } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import About from './About'
 import Broomies from './Broomies'
 import CaterDash from './CaterDash'
@@ -372,16 +373,41 @@ export default function App() {
   }, [path])
 
   if (path.startsWith('/spredo')) {
-    return <Spredo />
+    return (
+      <>
+        <Spredo />
+        <Analytics />
+      </>
+    )
   }
   if (path.startsWith('/caterdash')) {
-    return <CaterDash />
+    return (
+      <>
+        <CaterDash />
+        <Analytics />
+      </>
+    )
   }
   if (path.startsWith('/broomies')) {
-    return <Broomies />
+    return (
+      <>
+        <Broomies />
+        <Analytics />
+      </>
+    )
   }
   if (path.startsWith('/about')) {
-    return <About />
+    return (
+      <>
+        <About />
+        <Analytics />
+      </>
+    )
   }
-  return <Home />
+  return (
+    <>
+      <Home />
+      <Analytics />
+    </>
+  )
 }
